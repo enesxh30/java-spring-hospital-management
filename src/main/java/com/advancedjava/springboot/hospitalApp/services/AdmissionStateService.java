@@ -95,7 +95,6 @@ public class AdmissionStateService{
 
         existingAdmission.setId(admissionStateId);
         existingAdmission.setReason(admissionStateDto.getReason());
-        System.out.println("----------------------------------  "+admissionStateDto.isDischarge()); //boolean value test
         existingAdmission.setDischarge(admissionStateDto.isDischarge()); // boolean
         existingAdmission.setCause(admissionStateDto.getCause());
         existingAdmission.setEnteringDate(admissionStateDto.getEnteringDate());
