@@ -14,8 +14,9 @@ public class DepartamentMapper {
 
     public Departament mapToEntity(DepartamentDto departamentDto){
         Departament departament = new Departament();
-//        departament.setId(departamentDto.getId());
+        departament.setId(departamentDto.getId());
         departament.setName(departamentDto.getName());
+        departament.setCode(departamentDto.getCode());
 
         return departament;
     }
